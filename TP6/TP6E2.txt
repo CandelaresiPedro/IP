@@ -1,0 +1,14 @@
+PROGRAMA sumatoria
+(* Programa que solicita numeros al usuario, hasta que el usuario ingrese 0, luego devuelve la sumatoria de los numeros ingresados *)
+ENTERO numero, cantNum, suma
+numero <- 0
+cantNum <- 0
+suma <- 0
+REPETIR
+    system ("clear");
+    ESCRIBIR ("Cantidad de numeros ingresados ", cantNum++,"\n")
+    ESCRIBIR ("Ingrese un numero (0 para salir): ";
+    LEER(numero)
+    suma = suma + numero
+MIENTRAS (numero <> 0)
+ESCRIBIR ("La sumatoria de todos los numeros ingresados es: ",$suma,"\n")

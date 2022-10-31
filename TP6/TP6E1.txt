@@ -1,0 +1,17 @@
+PROGRAMA calculoNumero
+(*Progrma que calcula los numeros pares menores o iguales a 
+un numero ingresado por el usuario *)
+ENTERO numero
+ESCRIBIR ("Ingrese un numero: ")
+LEER(numero)
+ESCRIBIR ("Los numeros pares menores o iguales a ",numero," son: \n")
+MIENTRAS (numero <> 0) HACER
+    SI (numero MOD 2 = 0) ENTONCES
+        ESCRIBIR (numero," ")
+        numero = numero - 2
+    SI NO 
+        numero = numero -1
+    FIN SI
+FIN MIENTRAS
+ESCRIBIR "\n"
+FIN PROGRAMA
